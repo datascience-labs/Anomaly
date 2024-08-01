@@ -19,7 +19,7 @@ For contact, temp@temp.com
 5. Root Cause Analysis:
    - Provides clear insights into the root causes of detected anomalies by analyzing variable contributions.
    - Identifies top-K root cause variables, facilitating efficient diagnosis and problem-solving in real-time scenarios.
-6. Interpretable Results:
+6. Model Interpretability:
    - Offers t-SNE visualization of causally disentangled representations, illustrating distinct clusters of variable representations.
    - Enhances model transparency by explicitly encoding causal influences and their significance in the representation.
 7. Robust Performance:
@@ -33,28 +33,26 @@ To clone the repo:
 git clone https://github.com/datascience-labs/cdrl4ad.git && cd cdrl4ad
 ~~~
 
-Get data:
-~~~
-TBA
-~~~
-
-Install dependencies (virtualenv is recommended):
+Install dependencies (virtual env is recommended):
 ~~~bash
+pip install torch==2.0.0 torchvision==0.15.1 torchaudio==2.0.1 --index-url https://download.pytorch.org/whl/cu118
 pip install -r requirements.txt
-~~~
-
-Preprocess the data:
-~~~
-TBA
 ~~~
 
 To train:
 ~~~
-TBA
+python train.py --dataset <dataset> --epochs <epoch>
 ~~~
 
-⚙️ Default configuration:
-TBA
+## Data
+We used the SWaT, HAI, SMD, and PSM datasets. The originals of each dataset can be requested through the links below.  
+
+| Dataset | Source |
+|---------|--------|
+| SWaT    | [iTrust](https://itrust.sutd.edu.sg/) |
+| HAI     | [HAI](https://www.kaggle.com/datasets/icsdataset/hai-security-dataset) |
+| SMD     | [OmniAnomaly](https://github.com/NetManAIOps/OmniAnomaly/tree/master/ServerMachineDataset) |
+| PSM     | [RANSynCoders](https://github.com/eBay/RANSynCoders/tree/main/data) |
 
 ## Cite
 TBA
