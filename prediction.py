@@ -120,3 +120,5 @@ class Predictor:
             json.dump(str(summary), f, indent=2)
 
         print("-- Done.")
+        print(summary)
+                            
